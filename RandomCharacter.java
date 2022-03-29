@@ -38,13 +38,13 @@ public class RandomCharacter {
         int x = 2;
         int count = 0;
         
-        // divides the value being tested by an increment of i++ if the value is divisible by i, the count increases, showing the number of times the value was divisible
+        // divides the value being tested by an increment of x++ if the value is divisible by x, the count increases, showing the number of times the value was divisible
         while (x < value) {
            if (value % x == 0) {
               count++; // count increases if mod is 0, value is divisible
               break;
            }
-           x++; // increases i for next loop
+           x++; // increases x for next loop
         }
   
         if (count == 0) { // if count is 0, value was not divisible and hence, is a prime
